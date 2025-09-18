@@ -136,3 +136,42 @@ flex-direction: column;
     margin: 0;
 }
 
+/* animatie shineing */
+.main-container {
+  position: relative;
+  overflow: hidden; 
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    190deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: rotate(25deg);
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(80deg);
+  }
+  60% {
+    transform: translateX(100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+
+
+</style>
+
