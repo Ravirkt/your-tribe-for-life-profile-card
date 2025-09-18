@@ -1,0 +1,13 @@
+file bases routing
+
+app.html
+%sveltekit.head% alles wat je hier tussen zet komt in de head van de site
+
+index.js
+daar kun je alle exports doen en dan gebruiken op andere plekken
+
+graphql naar kijken hoe het werkt voor fetch
+
+componenten
+- componenten file moet altijd met hoofdletter
+- svg's kan je ook een file van maken en als componentn gebruiken
