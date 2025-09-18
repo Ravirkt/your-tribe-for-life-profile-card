@@ -186,5 +186,33 @@ flex-direction: column;
 
 
 
+
+/* shake animatie */
+ .card-holder-container a {
+        transition: transform 0.8s ease;
+        animation: animtion_shakeIng 1.5s infinite;
+        transform-origin: center;
+    }
+
+    @keyframes animtion_shakeIng {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(2deg);
+        }
+        50% {
+            transform: rotate(-2deg);
+        }
+        75% {
+            transform: rotate(2deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+
 </style>
 
