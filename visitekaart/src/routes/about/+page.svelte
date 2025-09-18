@@ -2,10 +2,9 @@
     let { data } = $props();
     const member = data.member;
 
-    import Group from '$lib/assets/Group.svg'
-    import mastercard_logo from '$lib/assets/mastercard_logo.svg'
-    import visabg from '$lib/assets/visabg.webp';
-
+    import Group from "$lib/assets/Group.svg";
+    import mastercard_logo from "$lib/assets/mastercard_logo.svg";
+    import visabg from "$lib/assets/visabg.webp";
 </script>
 
 <section class="main-container" style="background-image: url({visabg})">
@@ -37,158 +36,161 @@
 </section>
 
 <style>
+    :global(body) {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
 
-:global(body) {
-  height: 100vh;           
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
-  background-color: #000000;
-}
+        background-image: url(/bg.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    display: inline-block; 
-    text-decoration: none; 
-}
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+    }
 
-a:focus {
-  outline: 1px solid #fff; 
-}
+    a:focus {
+        outline: 1px solid white;
+    }
 
+    @font-face {
+        font-family: "creditcard";
+        src: url("/fonts/CREDC___.ttf");
+    }
 
-@font-face {
-  font-family: 'creditcard';
-  src: url('/fonts/CREDC___.ttf');
-}
+    @font-face {
+        font-family: "creditcardtext";
+        src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+    }
 
-@font-face {
-  font-family: 'creditcardtext';
-  src: url('/fonts/Montserrat-VariableFont_wght.ttf');
-}
+    .card-code {
+        font-size: clamp(0.7rem, 3vw, 1rem);
+    }
 
-.card-code {
-    font-size: clamp(0.7rem, 3vw, 1rem);
-}
+    .main-container {
+        width: 25rem;
+        height: 15rem;
+        /* border: 1px solid rgb(84, 84, 84); */
+        border-radius: 15px;
+        color: white;
 
-.main-container {
-width: 25rem;
-height: 15rem;
-border: 1px solid rgb(84, 84, 84);
-border-radius: 15px;
-color: white;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-display: flex;
-flex-direction: column;
-  background-size: cover;      
-  background-position: center; 
-  background-repeat: no-repeat;
-}
+        box-shadow: 0px 0px 20px rgb(51, 50, 50);
+    }
 
-.brand-and-print-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
+    .brand-and-print-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
 
-}
+    .card-code {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        font-family: "creditcard", sans-serif;
+    }
 
-.card-code {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    font-family: 'creditcard', sans-serif  ;
-}
+    .card-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        padding-top: 3rem;
+    }
 
-.card-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    padding-top: 3rem;
-}
+    .card-holder-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 
-.card-holder-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
+    .card-holder,
+    .expire-text {
+        margin: 0;
+        font-size: clamp(0.5rem, 3vw, 0.7rem);
+        font-family: "creditcardtext", sans-serif;
+    }
 
-.card-holder, .expire-text {
-    margin: 0;
-    font-size: clamp(0.5rem, 3vw, 0.7rem);
-    font-family: 'creditcardtext', sans-serif;
-}
+    .name {
+        font-size: clamp(0.5rem, 3vw, 0.8rem);
+        margin: 0;
+        font-family: "creditcardtext", sans-serif;
+    }
 
-.name {
-    font-size: clamp(0.5rem, 3vw, 0.8rem);
-    margin: 0;
-    font-family: 'creditcardtext', sans-serif;
-}
+    .expire-date {
+        font-family: "creditcard", sans-serif;
+        font-size: clamp(0.5rem, 3vw, 0.8rem);
+    }
 
-.expire-date {
-    font-family: 'creditcard', sans-serif;
-    font-size: clamp(0.5rem, 3vw, 0.8rem);
-}
+    .expire-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 
-.expire-info { 
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
+    .expire-text,
+    .expire-date {
+        margin: 0;
+    }
 
-.expire-text, .expire-date {
-    margin: 0;
-}
+    /* animatie shineing */
+    .main-container {
+        position: relative;
+        overflow: hidden;
+    }
 
-/* animatie shineing */
-.main-container {
-  position: relative;
-  overflow: hidden; 
-}
+    .main-container::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+            190deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 70%
+        );
+        transform: rotate(25deg);
+        animation: shine 4s infinite;
+    }
 
-.main-container::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    190deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  transform: rotate(25deg);
-  animation: shine 4s infinite;
-}
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%) rotate(80deg);
+        }
+        60% {
+            transform: translateX(100%) rotate(25deg);
+        }
+        100% {
+            transform: translateX(100%) rotate(25deg);
+        }
+    }
 
-@keyframes shine {
-  0% {
-    transform: translateX(-100%) rotate(80deg);
-  }
-  60% {
-    transform: translateX(100%) rotate(25deg);
-  }
-  100% {
-    transform: translateX(100%) rotate(25deg);
-  }
-}
-
-
-
-
-/* shake animatie */
- .card-holder-container a {
+    /* shake animatie */
+    .card-holder-container a {
         transition: transform 0.8s ease;
         animation: animtion_shakeIng 1.5s infinite;
         transform-origin: center;
@@ -211,8 +213,4 @@ flex-direction: column;
             transform: rotate(0deg);
         }
     }
-
-
-
 </style>
-
