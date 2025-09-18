@@ -25,7 +25,7 @@
     <div class="card-info-container">
         <div class="card-holder-container">
             <p class="card-holder">Card Holder</p>
-            <h1 class="name">{member.name}</h1>
+            <a href="https://github.com/Ravirkt"><h1 class="name">{member.name}</h1></a>
         </div>
 
         <div class="expire-info">
@@ -47,6 +47,19 @@
   align-items: center;      
   background-color: #000000;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+a:focus {
+  outline: 1px solid #fff; 
+}
+
 
 @font-face {
   font-family: 'creditcard';
