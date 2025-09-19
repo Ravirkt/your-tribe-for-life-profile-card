@@ -50,11 +50,9 @@ Als animatie heb ik bedacht om een shine animatie op de card te verwerken doormi
 
 Ook heeft het interatief element een simpele shake animatie om duidelijk te maken dat die interactief is.
 
-<video width="449" height="500" alt="animatie" src="https://github.com/user-attachments/assets/fb64d521-c15c-4fd9-ac5e-4cb88ff5b0b9" />
+<video width="450" height="500" alt="animatie" src="https://github.com/user-attachments/assets/fb64d521-c15c-4fd9-ac5e-4cb88ff5b0b9"></video>
 
 # 🖥️ Installatie
-
-Project lokaal installeren
 
 **Fork de repository**
 Ga naar de [repository pagina](https://github.com/Ravirkt/your-tribe-for-life-profile-card) en klik op de Fork knop in de rechterbovenhoek om een kopie van de repository naar je eigen GitHub account te maken.
