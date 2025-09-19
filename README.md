@@ -58,7 +58,7 @@ Ook heeft het interatief element een simpele shake animatie om duidelijk te make
 Ga naar de [repository pagina](https://github.com/Ravirkt/your-tribe-for-life-profile-card) en klik op de Fork knop in de rechterbovenhoek om een kopie van de repository naar je eigen GitHub account te maken.
 
 **Clone de repository**
-Clone je geforkte repository naar je lokale computer door het volgende commando uit te voeren in de terminal: git clone https://github.com/Ravirkt/your-tribe-for-life-profile-card.git
+Clone je geforkte repository naar je lokale computer door het volgende command uit te voeren in de terminal: git clone https://github.com/Ravirkt/your-tribe-for-life-profile-card.git
 
 **Navigeer naar folder**
 Navigeer naar de folder 'visitekaart' door in de terminal 'cd visitekaart' in te voeren druk vervolgens op enter.
