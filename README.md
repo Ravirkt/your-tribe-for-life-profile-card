@@ -1,12 +1,15 @@
+# Project omschrijving
 
-# Your Tribe for Life Profile Card
+De opdracht was het ontwerpen en ontwikkelen van een digitaal visitekaartje.
+Dit project is gebouwd met het SvelteKit framework en maakt gebruik van de Directus API om dynamisch data te renderen via API-endpoints.
 
-Redesign je visitekaartje op basis van een headless CMS en een framework.
+Het visitekaartje is designed in Figma en is vervolgens live deployed via Netlify
 
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-for-life-profile-card/blob/main/docs/INSTRUCTIONS.md)
+# Ontwerpkeuzes
 
-## Licentie
+Ik heb in de ontwerpfase 2 schetsen gemaakt. Ik kwam eerst op het idee om een masonry grid layout te maken met daarboven mijn naam. De cards van de grid layout zouden elk vervolgens info over mij bevatten. Persoonlijk houdt ik van minimalistische designs.
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+![Visitekaart Screenshot](./static/design1.webp)
+
 
 
