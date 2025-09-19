@@ -154,7 +154,8 @@
         margin: 0;
     }
 
-    /* animatie shineing */
+    /* animatie shineing
+    https://www.youtube.com/watch?v=VwhwZaWz9EI */
     .main-container {
         position: relative;
         overflow: hidden;
