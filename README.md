@@ -17,7 +17,7 @@ Daarom heb ik het design aangepast en uiteindelijk kwam ik op het volgende resul
 
 <img width="428" height="259" alt="Image" src="https://github.com/user-attachments/assets/c0b59a78-76d4-48b9-9c8c-84c5a5262f19" />
 
-## Fonts
+## 🖋️ Fonts
 
 De font die is gebruikt voor de nummers op de card zijn een speciaal “creditcard font” waardoor het daadwerkelijk lijkt op de echte nummers op een creditcard.
 

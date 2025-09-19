@@ -80,7 +80,6 @@
     .main-container {
         width: 25rem;
         height: 15rem;
-        /* border: 1px solid rgb(84, 84, 84); */
         border-radius: 15px;
         color: white;
 
